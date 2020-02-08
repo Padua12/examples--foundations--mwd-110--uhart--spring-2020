@@ -1,0 +1,1 @@
+Visit [https://code-warrior.github.io/tutorials/emmet/have-emmet-create-starter-html-syntax/](https://code-warrior.github.io/tutorials/emmet/have-emmet-create-starter-html-syntax/) for a video tutorial on how to create starter HTML syntax using Emmet.
