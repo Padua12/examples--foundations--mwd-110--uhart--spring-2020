@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using External, Internal/Embedded, and Inline CSS: The Cascade in Action</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+body {
+  border: 2px dashed yellow;
+  background-color: white;     /* Over-rides “lightblue” defined in style.css. */
+}
+
+body {
+  border: 4px solid #fadadd;   /* Over-rides the “2px dashed yellow“ from the previous rule. */
+  background-color: lightblue; /* Over-rides “white“ from the previous rule. */
+}
+  </style>
+</head>
+<body style="background-color: pink; /* Over-rides “lightblue” defined in the last rule of the internal/embedded style sheet. */">
+  <header>
+    <h1>Using External, Internal/Embedded, and Inline CSS: The Cascade in Action</h1>
+  </header>
+  <main>
+    <p>Refer to the external and internal style sheets in order to follow the cascade.</p>
+    <p><strong>Note</strong>: The specificity of each rule in both the internal and external style sheets is <code>0, 0, 0, 1</code>. The specificity of the inline style sheet (on line 20 of this file) has the highest specificity: <code>1, 0, 0, 0</code>.</p>
+  </main>
+</body>
+</html>
