@@ -1,0 +1,19 @@
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: pink;
+  background-image: url('../img/7612975186_e1f0d8b84a_b.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Trade Winds', cursive;
+}
+
+h1,
+footer {
+  padding: 12px;
+  background-color: rgba(100%, 100%, 100%, 50%);
+}
