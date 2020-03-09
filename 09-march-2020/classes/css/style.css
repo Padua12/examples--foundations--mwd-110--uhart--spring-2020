@@ -1,0 +1,26 @@
+/* Specificity: 0, 0, 1 */
+span {
+  background-color: red;
+  font-size: 2%;
+}
+
+/* Specificity: 0, 1, 0 */
+.highlight {
+  background-color: yellow;
+}
+
+/* Specificity: 0, 1, 0 */
+.warning {
+  font-weight: bold;
+  color: green;
+}
+
+/* Specificity: 0, 2, 0 */
+.highlight.warning {
+  border: 2px solid red;
+}
+
+/* Speicificity: 0, 2, 2 */
+body span.highlight.warning {
+  font-size: 300%;
+}
