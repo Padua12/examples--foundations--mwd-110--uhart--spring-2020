@@ -20,7 +20,7 @@ span {
   border: 2px solid red;
 }
 
-/* Speicificity: 0, 2, 2 */
+/* Specificity: 0, 2, 2 */
 body span.highlight.warning {
   font-size: 300%;
 }
