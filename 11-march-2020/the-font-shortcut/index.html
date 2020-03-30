@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Font Shortcut</title>
+  <style>
+:root {
+  font-size: 32px;
+}
+
+p:nth-child(2) {
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  /* Equivalent to (⤴︎⤴︎) the previous six declarations. */
+  font: italic small-caps 900 1.4rem / 1.1 'IBM Plex Sans', monospace;
+}
+  </style>
+</head>
+  <body>
+    <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam ipsam iusto consequatur itaque blanditiis, nam, hic deserunt illum eveniet harum, sint culpa dolorum at error! Tempora, numquam deleniti incidunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam ipsam iusto consequatur itaque blanditiis, nam, hic deserunt illum eveniet harum, sint culpa dolorum at error! Tempora, numquam deleniti incidunt.</p>
+  </body>
+</html>
