@@ -1,0 +1,11 @@
+:root {
+  --highlight-color: yellow;
+}
+
+span {
+  padding: 8px;
+  background-color: var(--highlight-color);
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
