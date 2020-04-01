@@ -1,0 +1,5 @@
+h1 {
+  position: static;
+  top: 100px; /* This offset property is ignored, because static ignores offset properties. */
+  z-index: 1000000;
+}
