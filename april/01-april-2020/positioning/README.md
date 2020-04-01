@@ -25,15 +25,25 @@ header {
 * Default/initial value to positioned items
 * Doesn’t break flow
 * Doesn’t observe offset properties
-* `z-index` (stacking context) isn’t observed
+* Stacking context (`z-index`) isn’t observed
 
 ---
 
 
 ## Relative
+* Doesn’t break flow
+* Observes offset properties
+* Stacking context (`z-index`) is observed
+* In the absence of offset properties, it simply behaves as though it’s `static`
+
+---
 
 ## Fixed
 
+---
+
 ## Absolute
+
+---
 
 ## Sticky
