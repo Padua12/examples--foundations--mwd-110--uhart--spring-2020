@@ -26,6 +26,7 @@ header {
 * Doesn’t break flow
 * Doesn’t observe offset properties
 * Stacking context (`z-index`) isn’t observed
+* Does scroll with the document
 
 ---
 
@@ -35,10 +36,18 @@ header {
 * Observes offset properties
 * Stacking context (`z-index`) is observed
 * In the absence of offset properties, it simply behaves as though it’s `static`
+* Does scroll with the document
 
 ---
 
 ## Fixed
+* Does break flow
+* Observes offset properties
+* Stacking context (`z-index`) is observed
+* In the absence of offset properties, a fixed positioned item will be rendered in it’s original location
+* Does not scroll with the document
+* Binds to the viewport; makes the viewport its parent
+* Offset properties are offset from the viewport
 
 ---
 
