@@ -1,0 +1,28 @@
+nav {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+}
+
+nav ul {
+  margin: auto;
+  width: 450px;
+}
+
+nav ul li {
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+}
+
+nav ul li a {
+  height: 100px;
+  line-height: 100px;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  background-color: pink;
+}
