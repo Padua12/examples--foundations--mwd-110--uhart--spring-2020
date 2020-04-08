@@ -30,7 +30,6 @@ header {
 
 ---
 
-
 ## Relative
 * Doesn’t break flow
 * Observes offset properties
@@ -41,9 +40,9 @@ header {
 ---
 
 ## Fixed
-* Does break flow
+* Break flow
 * Observes offset properties
-* Stacking context (`z-index`) is observed
+* Observe the stacking context (`z-index`)
 * In the absence of offset properties, a fixed positioned item will be rendered in it’s original location
 * Does not scroll with the document
 * Binds to the viewport; makes the viewport its parent
@@ -52,6 +51,12 @@ header {
 ---
 
 ## Absolute
+* Break flow
+* Observes offset properties
+* Observe the stacking context (`z-index`)
+* Does scroll with the document
+* Binds to the first non-static parent
+* Offset properties are offset from the the non-static parent
 
 ---
 
