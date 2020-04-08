@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  border: var(--border-width) solid transparent;
+}
+
+main {
+  position: relative;
+}
+
+#outer {
+  border-color: red;
+  width: calc(3 * var(--base-width));
+  height: calc(3 * var(--base-height));
+}
+
+#middle {
+  border-color: green;
+  width: calc(2 * var(--base-width));
+  height: calc(2 * var(--base-height));
+}
+
+#inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-color: blue;
+  width: calc(1 * var(--base-width));
+  height: calc(1 * var(--base-height));
+}
