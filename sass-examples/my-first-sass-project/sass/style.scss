@@ -1,0 +1,70 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+header + p + h2 + ol > li {
+  border: 10px solid #ffdbf2;
+}
+
+header {
+  > nav {
+    > ul {
+      > li {
+        box-shadow: 4px 4px 12px $color--box-shadow;
+      }
+    }
+  }
+}
+
+h2 {
+  background: {
+    color: inherit;
+    image: none;
+    repeat: no-repeat;
+    attachment: fixed;
+    position: top left;
+  }
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $color--static-links;
+  }
+
+  &:hover {
+    text-decoration: line-through;
+  }
+
+  &:active {
+    text-decoration: overline;
+  }
+}
+
+p {
+  &.highlight {
+    background-color: yellow;
+  }
+
+  &.warning {
+    color: red;
+    @include javascript-code;
+  }
+}
+
+p {
+  &:hover {
+    @include transition(color, .5s, linear, 0);
+  }
+}
+
+header {
+  @include transition();
+}
